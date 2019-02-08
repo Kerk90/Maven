@@ -9,10 +9,11 @@ package Decorator0;
  *
  * @author User
  */
-public class PhpDeveloper implements Developer{
+public class PhpDeveloper implements Developer {
+
     @Override
-    public String makeJob(){
-        return "write PHP code...";
+    public String makeJob() {
+        return " Write PHP code...";
     }
-    
+
 }
