@@ -23,9 +23,9 @@ public class StackTr {
         method3();
     }
 
-    
-        public static void method3(){
-    StackTraceElement[] st = Thread.currentThread().getStackTrace();
+    public static void method3() {
+
+        StackTraceElement[] st = Thread.currentThread().getStackTrace();
         for (StackTraceElement temp : st) {
             System.out.println(temp.getMethodName());
         }
