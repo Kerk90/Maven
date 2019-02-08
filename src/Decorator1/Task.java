@@ -15,8 +15,17 @@ import Decorator0.PhpDeveloper;
 public class Task {
 
     public static void main(String[] args) {
-        Developer developer = new TesterPHPDeveloper(new PhpDeveloper());
-        System.out.println(developer.makeJob());
+        Developer developer1 = new PhpDeveloper();
+        Developer developer2 = new TesterPHPDeveloper(new PhpDeveloper());
+        Developer developer3 = new ManagerPhpDeveloper(new TesterPHPDeveloper(new PhpDeveloper()));
+      
+        
+       
+        System.out.println(developer1.makeJob());
+        System.out.println(developer2.makeJob());
+        System.out.println(developer3.makeJob());
+        
+
     }
 
 }
