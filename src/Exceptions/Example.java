@@ -12,19 +12,16 @@ package Exceptions;
 public class Example {
 
     public static void main(String[] args) {
-        int a = 1;
-        int n = 2;
-
-//        a = a/(2-n);
-//        System.out.println("Result is " + a);
-// 
+        int a = 1, n = 2;
         try {
-            a = a / (2 - n);
-            System.out.println("Result is " + a);
-        } catch (Exception e) ;
-            System.out.println("Обрабатываем исключения");
-            System.out.println(e);
+            System.out.println("Попытка деления на нолью");
+            System.out.println("a/(2-n)=" + (a / (2 - n)));
+        } catch (Exception e) {
+            System.out.println("Oбработка исключения.");
             System.out.println(e.getMessage());
+        } finally {
+            System.out.println("Block finally");
         }
+        System.out.println("End code");
     }
 }
