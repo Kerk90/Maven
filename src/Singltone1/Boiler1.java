@@ -57,7 +57,7 @@ private Boiler1() {
 }
 public static Boiler1 getInstance() {
 if (uniqueInstance == null) {
-uniqueInstance = new Boiler1();
+uniqueInstance = new Boiler1(); //
 System.out.println("The new instance of Boiler");
 }
 System.out.println("Returning instance...");
