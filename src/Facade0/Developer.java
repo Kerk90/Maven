@@ -1,0 +1,36 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Facade0;
+
+/**
+ *
+ * @author User
+ */
+public class Developer {
+
+    public void doJobBeforeDeadLine(BugTracker bugTracker) {
+        if (bugTracker.isActiveSprint()) {
+            System.out.println("Developer is working on project..");
+        } else {
+            System.out.println("Developer is reading Oracle docs...");
+        }
+    }
+
+    public static void main(String[] args) {
+        Job job = new Job();
+        job.doJob();
+
+        BugTracker bugTracker = new BugTracker();
+        bugTracker.startSprint();
+
+        Developer developer = new Developer();
+        developer.doJobBeforeDeadLine(bugTracker);
+
+        bugTracker.finishSprint();
+        developer.doJobBeforeDeadLine(bugTracker);
+
+    }
+}
