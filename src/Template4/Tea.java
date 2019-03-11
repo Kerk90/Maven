@@ -3,33 +3,29 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Template2;
+package Template4;
 
 /**
  *
  * @author user
  */
-public abstract class HotDrink {
-    final void prepareRecipe(){
+public class Tea {
+    void prepareRecipe(){
         boilWater();
-        brew();
+        steepTeaBag();
         pourInCup();
-        addIngridient();
+        addLemon();
     }
-    abstract void brew();
-    
-    abstract void addIngridient();
-    
     public void boilWater(){
         System.out.println("Boiling water");
     }
+    public void steepTeaBag(){
+        System.out.println("Steeping the tea");
+    }
     public void pourInCup(){
-        System.out.println("Pouring into cup ");
+        System.out.println("Adding Lemon");
     }
-
-   
-    public void addIngridient(){
-        System.out.println("Adding lemon into cup ");
+    public void addLemon(){
+        System.out.println("Pouring into cup");
     }
-    
 }

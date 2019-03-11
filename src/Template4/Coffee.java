@@ -16,7 +16,11 @@ import java.io.InputStreamReader;
 public class Coffee extends HotDrink{
    @Override
    void brew(){
-       System.out.println("Завариваем кофе");
+       System.out.println("Завариваем кофе...");
+   }
+   @Override
+   void addIngridients(){
+       System.out.println("Добавляем молоко...");
    }
    @Override
    boolean customerWantsIngridients(){

@@ -5,6 +5,7 @@
  */
 package Iterator2;
 
+import Composite2.MenuComponent;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -18,6 +19,10 @@ public class Waitress {
 
     public Waitress(ArrayList<Menu> menus) {
         this.menus = menus;
+    }
+
+    public Waitress(MenuComponent allMenus) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public void printMenu() {

@@ -9,7 +9,7 @@ package Template2;
  *
  * @author user
  */
-public class Coffee extends HotDrink{
+public class Coffee {
     void prepareRecipe(){
         boilWater();
         brewCoffeeGrinds();

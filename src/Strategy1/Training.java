@@ -3,12 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Decorator0;
+package Strategy1;
 
 /**
  *
- * @author User
+ * @author user
  */
-public interface Developer {
-    public String makeJob(); 
+public class Training  implements Activity{
+     @Override
+     public void justDoIt(){
+       System.out.println("Rtaining...");
+   }
+    
 }
