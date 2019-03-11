@@ -15,7 +15,7 @@ import java.awt.event.ActionListener;
 public class SecondListener  implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e){
-        System.out.println("О нет, cделай это!!!");
+        System.out.println("Да, cделай это!!!");
     }
     
 }

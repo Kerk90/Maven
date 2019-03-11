@@ -10,6 +10,7 @@ package Observer1;
  * @author User
  */
 public class Main {
+
     public static void main(String[] args) {
         DataTest1 example = new DataTest1();
         example.go();
