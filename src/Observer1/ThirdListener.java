@@ -10,9 +10,9 @@ import java.awt.event.ActionListener;
 
 /**
  *
- * @author User
+ * @author user
  */
-public class SecondListener  implements ActionListener{
+public class ThirdListener implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e){
         System.out.println("Нажми, если хочешь!!!");

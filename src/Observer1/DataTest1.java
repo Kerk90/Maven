@@ -23,6 +23,8 @@ public class DataTest1 {
         
         button.addActionListener(new FirstListener());
         button.addActionListener(new SecondListener());
+        button.addActionListener(new ThirdListener());
+        
         frame.getContentPane().add(BorderLayout.CENTER, button);
         
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
