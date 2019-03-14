@@ -3,17 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Strategy1;
+package State;
 
 /**
  *
  * @author user
  */
-public class Eating implements Activity{
-    @Override
-    public void justDoIt(){
-        System.out.println("Eating...");
-    }    
-
+public class Sleeping  implements Activity{
+     @Override
+     public void justDoIt(){
+       System.out.println("Sleeping...");
+   }
     
 }
